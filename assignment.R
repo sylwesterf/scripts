@@ -62,3 +62,8 @@ CalcDBsmPrice <- function(
 
 priceD <- CalcDBsmPrice(spot=spot, t.exp = t.exp, sigma=sigma, strike=strike, r=r, L=0)
 impvolD <- CalcBsmImpvol(price=priceD, spot=spot, strike=strike, t.exp=t.exp, r=r) 
+
+plot( priceD, impvolD,
+       type="b", xlab = "price", ylab = "implied volatility (displaced)",
+       col="blue", lwd = 3,
+       main = paste("implied volatility of displaced BS prices"))
