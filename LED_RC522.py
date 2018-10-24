@@ -1,5 +1,17 @@
 #!/usr/bin/env python
-# -*- coding: utf8 -*- 
+# -*- coding: utf8 -*-
+#
+# sudo apt-get install python2.7-dev
+# git clone https://github.com/lthiery/SPI-Py.git
+# cd SPI-Py
+# sudo python setup.py install
+# git clone https://github.com/mxgxw/MFRC522-python.git
+# cd MFRC522-python
+# python Read.py
+#
+#[9 GND]
+#[11 VCC]
+#
  
 import RPi.GPIO as GPIO
 import MFRC522
